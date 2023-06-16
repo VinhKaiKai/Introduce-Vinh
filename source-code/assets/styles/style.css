@@ -1,0 +1,13 @@
+/* base */
+@import '../styles/base/_base.css';
+@import '../styles/base/_custom.css';
+
+/* header & footer */
+@import '../styles/modules/global/_header.css';
+@import '../styles/modules/global/_footer.css';
+
+/* modules */
+@import '../styles/modules/_main.css';
+@import '../styles/modules/_mod-introduce.css';
+@import '../styles/modules/mod-one.css'; /*module có cái núi và dòng chữ introduce myself (15/06)*/
+@import '../styles/modules/CV.css'; /*module có nền tương tác và module cv cá nhân.*/
