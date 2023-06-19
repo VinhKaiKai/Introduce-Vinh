@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Profile of Vinh</title>
+    </head>
+<body>
+    <section class="menu">
+        <div class="bannervideo" id="slidershow">
+            <video src="./assets/videos/video-3.mp4" muted autoplay loop class="active"></video>
+            <video src="./assets/videos/video-2.mp4" muted autoplay loop></video>
+            <video src="./assets/videos/video-1.mp4" muted autoplay loop></video>
+        </div>
+        <div class="container">
+            <header id="navbar">
+                <a href="#" class="logo">Bear</a>
+                <ul>
+                    <li><a href="#" class="active">home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="bannertext">
+                    <div class="active">
+                        <h2>Aris boras</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+                        
+                    </div>
+                    <div>
+                        <h2>Bear one</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+                    </div>
+                    <div>
+                        <h2>Bear Two</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="sci">
+                <li><a href=""><img src="./assets/images/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="./assets/images/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="./assets/images/instagram.png" alt=""></a></li>
+            </ul>
+
+            <ul class="controls">
+                <li><img src="./assets/images/left.png" alt=""></li>
+                <li><img src="./assets/images/right.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+    <script>
+        const slidershow = document.getElementById('slideshow');
+        const slides = slidershow.getElementsByClassName('video');
+
+        let i =0;
+
+        function nextslide(){
+            slides[i].classList.remove('active');
+            i = (i+1) % slides.length;
+            slides[i].classList.add('active');
+        }
+        function preslideslide(){
+            slides[i].classList.remove('active');
+            i = (i-1) % slides.length;
+            slides[i].classList.add('active');
+        }
+    </script>
+</body>
+</html>
