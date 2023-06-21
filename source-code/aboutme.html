@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+        <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Profile of Vinh</title>
+      </head>
+<body>
+    <!--Module about me-->
+    <section class="about-me">
+        <div class="container">
+            <div class="my-about-me">
+                <div class="about-col-1">
+                    <img src="./assets/images/avt-tam-thoi.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <div class="word">
+                        <span>I am</span>
+                        <div class="message">
+                          <div class="word">Front-End developer</div>
+                          <div class="word">App/UI Designer</div>
+                          <div class="word">Contents Creator</div>
+                        </div>
+                    </div>
+                    <p>I'm a front-end developer, with a wealth of domain knowledge and responsibility in each project I'm sure. I will be an excellent front-end developer</p>
+                    <div class="Cac-nut">
+                        <button class="nut bandau" onclick="thaydoimaunut('skills', this)">Skills</button>
+                        <button class="nut" onclick="thaydoimaunut('experiences', this)">Experiences</button>
+                        <button class="nut" onclick="thaydoimaunut('education', this)">Education</button>
+                    </div>
+                    <div class="content">
+                        <div class="list active" id="skills">
+                            <h5>UI/UX - Working group - Fluent english - Self learning</h5>
+                            <p>Front-End Developer with proven experience at Zillow and HubSpot in helping companies create and maintain a better code base for reusability. Capable of continuous learning from senior developers while still nurturing junior developers. Experience in driving projects forward as the development team leader, facilitating projects from concept to launch. Passionate about learning and development with a desire to apply skills on a larger development team at Redfin. Eager to tackle more complex problems and continue to find ways to maximize user efficiency.</p>
+                        </div>
+                        <div class="list" id="experiences">
+                            <h5>3 Year C# - Leader - Reviews code </h5>
+                            <p>I'm	a full stack developer with 3 years of experience in C#.NET	technologies (which	includes 2
+                                years of experience	in Front-End Web Development), with	good knowledge of Object-Oriented	
+                                Analysis and Design, Database Design, and Design Patterns.	
+                                Learning new languages and technologies is what I am passionate	 about.	I am considered	 a	
+                                team-player	because	I like to help	other and tend to work well within the group. I can also do some
+                                mentoring tasks and do code	reviews for	other team members.	
+                                </p>
+                        </div>
+                        <div class="list" id="education">
+                            <h5>Nha Trang University - LonDon University</h5>
+                            <p>Nha Trang University, located in the coastal city of Nha Trang, Vietnam, is a prestigious higher education institution offering a wide range of academic programs. With a focus on excellence and innovation, the university provides students with a supportive and dynamic learning environment. <br> <br>London is home to several prestigious universities, making it a global hub for higher education. These universities offer a diverse range of academic programs and are known for their academic excellence, research contributions, and multicultural environment</p>
+                        </div>
+                    </div>
+                    <div class="come-cv">
+                        <a href="../source-code/CV.html">See my CV</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        //ham xử lý các nút khi bấm vào nó sẽ đổi màu 
+        function thaydoimaunut(type, nutnao)
+        {
+
+            let vinh = document.getElementsByClassName('nut');
+            for(index = 0 ; index < vinh.length ; index++)
+            {
+                vinh[index].style.background = 'rgb(100, 101, 226)';
+            }
+            nutnao.style.background='red';
+        //ham xử lý thông tin.
+
+            let quan = document.getElementsByClassName('list');
+            for(i=0; i<quan.length ; i++)
+            {
+                quan[i].style.display = 'none';
+            }
+            document.getElementById(type).style.display = 'block';
+}
+    </script>
+</body>
+</html>

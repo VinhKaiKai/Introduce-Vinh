@@ -1,0 +1,5 @@
+/*đặt biến trong scss, được áp dụng trong file about-me*/ 
+:root{
+    --primary-color:#ff0000;
+    --secondary-color:#00ff00;
+}

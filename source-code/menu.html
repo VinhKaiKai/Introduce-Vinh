@@ -10,68 +10,101 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Profile of Vinh</title>
     </head>
-<body>
-    <section class="menu">
-        <div class="bannervideo" id="slidershow">
-            <video src="./assets/videos/video-3.mp4" muted autoplay loop class="active"></video>
-            <video src="./assets/videos/video-2.mp4" muted autoplay loop></video>
-            <video src="./assets/videos/video-1.mp4" muted autoplay loop></video>
-        </div>
-        <div class="container">
-            <header id="navbar">
-                <a href="#" class="logo">Bear</a>
-                <ul>
-                    <li><a href="#" class="active">home</a></li>
-                    <li><a href="#">Destination</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </header>
-            <div class="content">
-                <div class="bannertext">
-                    <div class="active">
-                        <h2>Aris boras</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
-                        
-                    </div>
-                    <div>
-                        <h2>Bear one</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
-                    </div>
-                    <div>
-                        <h2>Bear Two</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+    <body>
+        <section class="menu">
+            <div class="bannervideo" id="slidershow">
+                <video src="./assets/videos/video-3.mp4" muted autoplay loop class="active"></video>
+                <video src="./assets/videos/video-2.mp4" muted autoplay loop></video>
+                <video src="./assets/videos/video-1.mp4" muted autoplay loop></video>
+                <video src="./assets/videos/video-4.mp4" muted autoplay loop></video>
+            </div>
+            <div class="container">
+                <header id="navbar">
+                    <a href="#" class="logo">Bear</a>
+                    <ul>
+                        <li><a href="#" class="active">home</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                    <span class="menuicon" onclick="togglemenu();"></span>
+                </header>
+                <div class="content">
+                    <div class="bannertext" id="slidershowtext">
+                        <div class="active">
+                            <h2>Aris boras</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+                        </div>
+                        <div>
+                            <h2>Kimetsu no Yaiba</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+                        </div>
+                        <div>
+                            <h2>Bear one</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+                        </div>
+                        <div>
+                            <h2>Bear Two</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, deleniti eum! Rerum tenetur harum ducimus voluptate. Adipisci alias, aut ad ea nihil eum dignissimos rem inventore accusamus. Aut, dicta nostrum. Officiis aliquid a neque deleniti facilis sapiente quae, quia voluptate?</p>
+                        </div>
                     </div>
                 </div>
+                <ul class="sci">
+                    <li><a href=""><img src="./assets/images/facebook.png" alt=""></a></li>
+                    <li><a href=""><img src="./assets/images/twitter.png" alt=""></a></li>
+                    <li><a href=""><img src="./assets/images/instagram.png" alt=""></a></li>
+                </ul>
+
+                <ul class="controls">
+                    <li onclick="preslide();nextslidetext();"><img src="./assets/images/left.png" alt=""></li>
+                    <li onclick="nextslide();preslidetext();"><img src="./assets/images/right.png" alt=""></li>
+                </ul>
             </div>
-            <ul class="sci">
-                <li><a href=""><img src="./assets/images/facebook.png" alt=""></a></li>
-                <li><a href=""><img src="./assets/images/twitter.png" alt=""></a></li>
-                <li><a href=""><img src="./assets/images/instagram.png" alt=""></a></li>
-            </ul>
+        </section>
 
-            <ul class="controls">
-                <li><img src="./assets/images/left.png" alt=""></li>
-                <li><img src="./assets/images/right.png" alt=""></li>
-            </ul>
-        </div>
-    </section>
-    <script>
-        const slidershow = document.getElementById('slideshow');
-        const slides = slidershow.getElementsByClassName('video');
+        <script>
 
-        let i =0;
 
-        function nextslide(){
-            slides[i].classList.remove('active');
-            i = (i+1) % slides.length;
-            slides[i].classList.add('active');
-        }
-        function preslideslide(){
-            slides[i].classList.remove('active');
-            i = (i-1) % slides.length;
-            slides[i].classList.add('active');
-        }
-    </script>
-</body>
+            //lấy cái bọc chứa các danh sách email để lấy ra 1 mảng danh sách-->
+            const slidershow = document.getElementById('slidershow');
+            //lấy ra từng cái tag của của từng video
+            const slides = slidershow.getElementsByTagName('video');
+            //hàm thay đổi đối tượng được chọn trong danh sách-
+            var i = 0;
+            function nextslide(){ // hàm next
+                slides[i].classList.remove('active');
+                i = ( i + 1 ) % slides.length;
+                slides[i].classList.add('active');
+            }
+            function preslide(){ //hàm lùi
+                slides[i].classList.remove('active');
+                i = (i - 1 + slides.length) % slides.length;
+                slides[i].classList.add('active');
+            }
+
+            const slidershowtext = document.getElementById('slidershowtext');
+            //lấy ra từng cái tag của của từng video
+            const slidestext = slidershowtext.getElementsByTagName('div');
+            //<!--hàm thay đổi đối tượng được chọn trong danh sách-->
+            var index = 0;
+            function nextslidetext(){ // hàm next
+                slidestext[index].classList.remove('active');
+                index = ( index + 1 ) % slidestext.length;
+                slidestext[index].classList.add('active');
+            }
+            function preslidetext(){ //hàm lùi
+                slidestext[index].classList.remove('active');
+                index = (index - 1 + slidestext.length) % slidestext.length;
+                slidestext[index].classList.add('active');
+            }
+
+            function togglemenu(){
+                const menuicon = document.querySelector('.menuicon');
+                const navbar = document.getElementById('navbar');
+                menuicon.classList.toggle('active');
+                navbar.classList.toggle('active');
+            }
+
+        </script>
+    </body>
 </html>

@@ -2,6 +2,7 @@
 @import '../styles/base/_base.css';
 @import '../styles/base/_animation.css';
 @import '../styles/base/_custom.css';
+@import '../styles/base/_variable.css';
 
 /* header & footer */
 @import '../styles/modules/global/_header.css';
@@ -13,4 +14,5 @@
 @import '../styles/modules/mod-one.css'; /*module có cái núi và dòng chữ introduce myself (15/06)*/
 @import '../styles/modules/CV.css';
 @import '../styles/modules/Loading.css';
-@import '../styles/modules/menu.css';  /*module có nền tương tác và module cv cá nhân.*/
+@import '../styles/modules/menu.css';  
+@import '../styles/modules/aboutme.css'; 

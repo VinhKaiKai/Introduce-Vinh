@@ -1,0 +1,185 @@
+/* .about-me{
+    & .container{
+        width: 100%;
+        height: 100%;
+        background: #000;
+
+        & .my-about-me{
+            width: 100%;
+            height: 100%;
+            padding: 30px 0;
+            background: #fbf4f4;
+            display: flex;
+            
+            & .about-col-1{
+                width: 30%;
+                min-height: 450px;
+                min-width: 200px;
+                padding-left: 60px;
+               
+                & img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15px;
+                    object-fit: cover;
+                }
+            }
+            & .about-col-2{
+                width: 60%;
+                padding-left: 45px;
+                & .sub-title{
+                    color:#000000;
+                    font-size: 60px;
+                    font-weight: 600;
+
+                }
+            }
+        }
+    }
+} 
+*/
+/*Import các thư viện SCSS nếu cần*/
+/* @import 'library'; */
+.about-me {
+  padding: 30px 0;
+  font-family: Arial, sans-serif;
+
+    & .container {
+        width: 100%;
+        height: 100%;
+        background: #fff;
+
+        & .my-about-me {
+            display: flex;
+
+            & .about-col-1 {
+                width: 40%;
+                & img {
+                    border-radius: 30px;
+                    border: #333 solid;
+                }
+            }
+
+            & .about-col-2 {
+                padding-left: 25px;
+                width: 60%;
+                padding-top: 30px;
+
+                & .sub-title {
+                    color: var(--primary-color);
+                    font-size: 40px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+
+                & .word {
+                    color: #333;
+                    font-family: tahoma;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    line-height: 1.5;
+                    text-transform: uppercase;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    position: relative;
+                    width: 880px;
+                    font-family: 'tahoma';
+
+                    & span{
+                        font-size: 40px;
+                        margin-left: 0px;
+                        
+                    }
+
+                    & .message {
+                        background-color: rgb(245, 255, 219);
+                        color: #eb0808;
+                        box-shadow: 10px 0 15px rgba(0,0,0,0.01);
+                        backdrop-filter: blur(8px);
+                        display: block;
+                        font-weight: 900;
+                        overflow: hidden;
+                        position: absolute;
+                        padding-left: 0.5rem;
+                        top: 0.2rem;
+                        left: 110px;
+                        animation: openclose 12s ease-in-out infinite;
+                        & .word{
+                            text-align: left;
+                        }
+                      }
+                  }
+
+                & p {
+                    color: #333;
+                    font-size: 16px;
+                    line-height: 1.5;
+                }
+
+                & .Cac-nut {
+                    margin-top: 20px;
+
+                    & .nut {
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        background-color:rgb(100, 101, 226);
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        margin-right: 10px;
+                    }
+                
+                    & .bandau {
+                        background-color: var(--primary-color);
+                    }
+                
+                }
+
+                & .content {
+                    margin-top: 20px;
+
+                    & .list {
+                        display: none;
+                        margin-bottom: 10px;
+
+                        & h5 {
+                            color: var(--primary-color);
+                            font-size: 18px;
+                            margin-bottom: 5px;
+                        }
+
+                        & p {
+                            color: #333;
+                            font-size: 14px;
+                        }
+                    }
+                    & .active{
+                        display: block;
+                    }
+                }
+                & .come-cv{
+                    margin-top: 50px;
+                    max-width: 150px;
+                    background: #000;
+                    border-radius: 5px;
+
+                    & a{
+                        color: #fff;
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        text-align: center;
+                        justify-content: center;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+  

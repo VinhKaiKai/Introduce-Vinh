@@ -1,0 +1,27 @@
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  
+    /*md*/
+    @media (min-width: 768px) {
+      padding: 0 40px;
+    }
+  
+    /*lg*/
+    @media (min-width: 992px) {
+      max-width: 1000px;
+    }
+  
+    /*xl*/
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+      padding: 0 80px;
+    }
+  
+    /*2xl*/
+    @media (min-width: 1440px) {
+      max-width: 1400px;
+      padding: 0px 0px;
+    }
+  }
